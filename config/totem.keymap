@@ -46,10 +46,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp V  &kp M  &kp L     &kp C      &kp P           &kp X            &kp F          &kp O    &kp U     &kp J
-       &kp S  &kp T  &kp R     &kp D      &kp Y           &kp PERIOD       &kp N          &kp A    &kp E     &kp I
-&to 1  &kp Z  &kp X  &kp C     &kp V      &kp B           &kp N            &kp M          &kp SQT  &kp SEMI  &kp COMMA  &to 0
-                     &kp LWIN  &kp SPACE  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp BACKSPACE  &kp DEL
+       &kp V  &kp M  &kp L     &kp C      &kp P           &kp X       &kp F          &kp O    &kp U     &kp J
+       &kp S  &kp T  &kp R     &kp D      &kp Y           &kp PERIOD  &kp N          &kp A    &kp E     &kp I
+&to 1  &kp Z  &kp X  &kp C     &kp V      &kp B           &kp N       &kp M          &kp SQT  &kp SEMI  &kp COMMA  &to 0
+                     &kp LWIN  &kp SPACE  &kp LEFT_SHIFT  &kp TAB     &kp BACKSPACE  &kp DEL
             >;
         };
 
@@ -74,8 +74,17 @@
             bindings = <
        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp HOME       &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp C_VOL_UP
        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL         &kp MINUS          &kp END        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_VOL_DN
-&to 1  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0      &kp PERIOD         &bt BT_CLR     &bt BT_NXT      &bt BT_PRV      &sys_reset       &kp C_MUTE    &to 0
+&to 0  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0      &kp PERIOD         &bt BT_CLR     &bt BT_NXT      &bt BT_PRV      &sys_reset       &kp C_MUTE    &to 0
                                    &kp LGUI      &trans            &kp SPACE          &kp BACKSPACE  &kp DELETE      &kp RALT
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+       &kp Q  &kp W  &kp E      &kp R      &kp T      &kp Y      &kp U      &kp I      &kp O    &kp P
+       &kp A  &kp S  &kp D      &kp F      &kp G      &kp H      &kp J      &kp K      &kp L    &kp SEMI
+&to 0  &kp Z  &kp X  &kp C      &kp V      &kp B      &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &to 1
+                     &kp LCTRL  &kp LSHFT  &kp SPACE  &kp SPACE  &kp LSHFT  &kp LCTRL
             >;
         };
 
